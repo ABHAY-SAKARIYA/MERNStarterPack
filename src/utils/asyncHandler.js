@@ -2,10 +2,10 @@
 // Creating an async handler higher order function using async await
 const asyncHandler = (requestHandler) => async (req, res, next) => {
     try {
-        await requestHandler(req, res, next);
+        return await requestHandler(req, res, next);
     } catch (error) {
-        res.status(error.code || 500 ).json({
-            type: "success",
+        return res.status(error.code || 500 ).json({
+            type: "ERROR",
             msg: error.message
         })
     }

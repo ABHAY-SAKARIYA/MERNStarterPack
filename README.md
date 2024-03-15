@@ -21,4 +21,9 @@ Just Clone this Project Rename `name` field with your project name.
     ```
 
 - Ready To Go..
+
+- Run This Command To Run The Nodemon Server
+  ```bash
+  npm run dev
+  ```
     
